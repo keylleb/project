@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzuri Caregiver's_Guest</title>
+</head>
+    <style>
+        body{
+            background-color: whitesmoke;
+            background-size: cover;
+            background-repeat:no-repeat;
+        }
+        .card {
+            
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .card:hover {
+             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .container {
+        padding: 2px 16px;
+    }
+    .context{
+        text-align: end;
+        font-family: 'Raleway',sans-serif;
+        font-size: 12px;
+       
+        line-break: 36px;
+
+    }
+    #context2{
+        text-align: end;
+        font-size: large;
+        color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0;
+        
+    }
+    #date{
+        font-size: small;
+    }
+    </style>
+<body>
+    
+    <div class="context">
+        <p>Medical Care, Home Health Care</p>
+        
+    </div>
+    <div class="card">
+        <p id="context2">Long-term Care
+            Some conditions are life-long, others are simply long lasting. 
+            <br>Here is a place to talk about caregiving that lasts for years.</p>
+            <br>
+            
+        
+
+        <img src="./images/79340MedicalPractitioner.jpg" alt="Avatar" style="width:50%">
+        <div class="container">
+          <h4><b>Thomas Bironga</b></h4>
+          <p>Medical practitioner</p>
+          <p>Contact: +254704436540</p>
+        </div>
+      </div>
+      <p id="date"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+</body>
+</html>

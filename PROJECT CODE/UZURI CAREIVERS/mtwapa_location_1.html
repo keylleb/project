@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mtwapa_location_1</title>
+</head>
+    <style>
+        body{
+            background-color: whitesmoke;
+            background-size: cover;
+            background-repeat:no-repeat;
+        }
+        .card {
+            
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .container {
+       color: rgb(18, 133, 62);
+    }
+    .button{
+        background-color: rgb(25, 9, 43);
+        color: white;
+    }
+    .post{
+        background-color: rgb(25, 9, 43);
+        color: white;
+    }
+    .button:hover{
+        box-shadow: 0 8px 16px 0 rgba(230, 33, 33, 0.2);
+    }
+    #date{
+        font-size: small;
+    }
+    </style>
+<body>
+    <label for="identifier" name="mtpa_i"></label>
+
+    <div class="context">
+        <p>Medical Care, Home Health Care</p>
+        
+    </div>
+    <div class="card">
+        <p >Uzuri Caregiver's</p>
+        <h2 >Location : Second Sunrise Avenue along Mtwapa highway</h2>        
+        <div class="container">
+          <h4><b>Uzuri Caregiver's Mtwapa location 1</b></h4>
+          <p>Caregivings services </p>
+          <p>Contact: +254704436540</p>
+        </div>
+        <br>
+        
+        <form action="../choice.php" method="get">
+            <label for="contact">Mobile Number</label>
+            <br>
+            <input type="text" name="contact" required>
+            <br>
+            <label for="Address">Street Address</label>
+            <br>
+            <input type="text" name="address" required>
+            <br>
+            <button type="submit" class="button" name="status">Choose </button>
+            <br>
+            <br><br><br>
+            
+            
+        </form>
+      </div>
+
+      <p style="text-align: end; text-decoration: none;"> <a href="./comment_out1.php">Comments</a> </p>
+      
+      <form action="./comments.php" method="get">
+
+        <label for="identifier" > <strong>Identifier</strong> </label>
+
+        <p>Select <strong>mtpa_i</strong> for Mtwapa location 1 ... </p> 
+
+        <p> <strong>mmbsa_i for Mombasa etc</strong> </p>
+
+        <input type="text" name="identifier" required>
+
+        <br>
+
+        <label for="comments">Comments</label>
+
+        <br>
+        <input style="text-align: center;" type="text" name="comment_mtpa_i" required>
+
+        <br> 
+        <label for="email">Email</label>
+        
+        <br>
+        <input style="text-align: center;" type="text" name="email" required>
+        
+        <button class="post" type="submit">Post</button>
+
+        
+
+    </form>
+
+      <p style="background-position-y: bottom;" id="date"></p>
+      
+
+     
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+
+</body>
+</html>

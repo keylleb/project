@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .container{
+            transition: 0.3s;
+            text-align: center;
+        }
+        .container:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    </style>
+<body>
+    <br><br><br><br><br><br><br>
+    <div class="container">
+       
+        <div class="header">
+            <h2>Login</h2>
+        </div>
+
+        <form action="./login.php" method="get">
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" required>
+            </div>
+
+            <button type="submit">Submit</button>
+
+            <h3>New user? <br> <br>
+                 <a style="text-decoration: none; color: rgb(25, 206, 137);"  href="./index.html">Signup</a></h3>
+            <br>
+            <h3>An Administrator?  <br>
+                 <a style="text-decoration: none; color: rgb(184, 23, 199);" href="./admin.html">Login</a> </h3>
+
+
+   </div>
+    
+</body>
+</html>
